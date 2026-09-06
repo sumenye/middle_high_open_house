@@ -1,0 +1,1043 @@
+<title>Open House 2026–2027</title>
+<style>
+  :root{
+    --bg:#faf8f3;
+    --bg-card:#ffffff;
+    --bg-soft:#f0ece0;
+    --text:#2b2e35;
+    --text-soft:#666b75;
+    --accent:#3a5a6b;
+    --accent-2:#b9862f;
+    --accent-3:#3a5a6b;
+    --border:#e2ddd0;
+    --tag-bg:#e8eef0;
+    --tag-text:#2f4a58;
+    --shadow: 0 1px 3px rgba(30,40,50,0.08), 0 1px 2px rgba(30,40,50,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#1a1d22;
+      --bg-card:#22262c;
+      --bg-soft:#282c33;
+      --text:#eceef1;
+      --text-soft:#b7bcc4;
+      --accent:#7fa8bd;
+      --accent-2:#dcae5c;
+      --accent-3:#7fa8bd;
+      --border:#3a3f47;
+      --tag-bg:#2a3540;
+      --tag-text:#a9c9d8;
+      --shadow: 0 1px 3px rgba(0,0,0,0.4), 0 1px 2px rgba(0,0,0,0.3);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#1a1d22;
+    --bg-card:#22262c;
+    --bg-soft:#282c33;
+    --text:#eceef1;
+    --text-soft:#b7bcc4;
+    --accent:#7fa8bd;
+    --accent-2:#dcae5c;
+    --accent-3:#7fa8bd;
+    --border:#3a3f47;
+    --tag-bg:#2a3540;
+    --tag-text:#a9c9d8;
+    --shadow: 0 1px 3px rgba(0,0,0,0.4), 0 1px 2px rgba(0,0,0,0.3);
+  }
+  *{box-sizing:border-box;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height:1.5;
+  }
+  .wrap{max-width:880px;margin:0 auto;padding:28px 18px 80px;}
+  header.hero{
+    text-align:center;
+    padding:34px 18px 26px;
+    border-bottom:1px solid var(--border);
+    margin-bottom:22px;
+  }
+  header.hero h1{
+    font-size:1.7rem;
+    margin:0 0 6px;
+    letter-spacing:0.01em;
+  }
+  header.hero p.sub{
+    color:var(--text-soft);
+    margin:0;
+    font-size:0.98rem;
+  }
+  .privacy-note{
+    background:var(--bg-soft);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:12px 16px;
+    font-size:0.86rem;
+    color:var(--text-soft);
+    margin:18px 0 26px;
+  }
+  nav.tabs{
+    display:flex;
+    gap:8px;
+    justify-content:center;
+    margin-bottom:26px;
+    flex-wrap:wrap;
+  }
+  nav.tabs button{
+    font-size:1rem;
+    font-weight:600;
+    padding:10px 22px;
+    border-radius:999px;
+    border:1px solid var(--border);
+    background:var(--bg-card);
+    color:var(--text);
+    cursor:pointer;
+  }
+  nav.tabs button.active{
+    background:var(--accent);
+    color:#f5f8fa;
+    border-color:var(--accent);
+  }
+  :root[data-theme="dark"] nav.tabs button.active,
+  :root:not([data-theme="light"]) nav.tabs button.active{
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]) nav.tabs button.active{ color:#0f1b22; }
+  }
+  :root[data-theme="dark"] nav.tabs button.active{ color:#0f1b22; }
+
+  section.track{display:none;}
+  section.track.active{display:block;}
+
+  h2.section-title{
+    font-size:1.15rem;
+    margin:34px 0 12px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--accent);
+    display:inline-block;
+  }
+  details.card{
+    background:var(--bg-card);
+    border:1px solid var(--border);
+    border-radius:12px;
+    box-shadow:var(--shadow);
+    margin-bottom:12px;
+    overflow:hidden;
+  }
+  details.card summary{
+    list-style:none;
+    cursor:pointer;
+    padding:14px 18px;
+    font-weight:600;
+    font-size:1rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+  }
+  details.card summary::-webkit-details-marker{display:none;}
+  details.card summary .chev{
+    color:var(--text-soft);
+    transition:transform 0.15s ease;
+    flex-shrink:0;
+  }
+  details.card[open] summary .chev{transform:rotate(90deg);}
+  details.card .body{
+    padding:0 18px 18px;
+    color:var(--text);
+  }
+  details.card .body p{margin:8px 0;}
+  details.card .body ul{margin:8px 0;padding-left:20px;}
+  details.card .body li{margin:4px 0;}
+  .lede{color:var(--text-soft);font-size:0.92rem;margin-top:-4px;}
+
+  table.cal{
+    width:100%;
+    border-collapse:collapse;
+    font-size:0.88rem;
+    margin:10px 0;
+  }
+  table.cal th, table.cal td{
+    text-align:left;
+    padding:6px 8px;
+    border-bottom:1px solid var(--border);
+    vertical-align:top;
+  }
+  table.cal th{
+    color:var(--text-soft);
+    font-weight:600;
+    font-size:0.78rem;
+    text-transform:uppercase;
+    letter-spacing:0.03em;
+  }
+  table.cal td.date{white-space:nowrap;font-weight:600;color:var(--accent);}
+
+  .term-label{
+    display:inline-block;
+    background:var(--tag-bg);
+    color:var(--tag-text);
+    font-size:0.78rem;
+    font-weight:700;
+    padding:3px 10px;
+    border-radius:999px;
+    margin:14px 0 4px;
+  }
+
+  table.sched{width:100%;border-collapse:collapse;font-size:0.87rem;margin:10px 0;}
+  table.sched th, table.sched td{border:1px solid var(--border);padding:6px 8px;text-align:left;}
+  table.sched th{background:var(--bg-soft);}
+  .sched-wrap{overflow-x:auto;}
+
+  .roster-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(200px,1fr));
+    gap:8px;
+    margin:10px 0;
+  }
+  .roster-chip{
+    background:var(--bg-soft);
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:8px 12px;
+    font-size:0.88rem;
+  }
+  .roster-chip .name{font-weight:600;}
+  .roster-chip .room{color:var(--text-soft);font-size:0.8rem;}
+
+  .contact-grid{display:grid;gap:8px;margin:10px 0;}
+  .contact-row{
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+    background:var(--bg-soft);
+    border-radius:8px;
+    padding:8px 12px;
+    font-size:0.9rem;
+  }
+  .contact-row .role{color:var(--text-soft);}
+
+  .flyer{
+    background:var(--bg-soft);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:14px 16px;
+    margin:10px 0;
+  }
+  .flyer h4{margin:0 0 6px;font-size:0.98rem;}
+  .flyer .meta{font-size:0.85rem;color:var(--text-soft);margin-bottom:6px;}
+  .flyer ul{margin:6px 0;padding-left:18px;}
+
+  .kv{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:0.9rem;margin:8px 0;}
+  .kv dt{color:var(--text-soft);}
+  .kv dd{margin:0;}
+
+  footer.page-footer{
+    text-align:center;
+    color:var(--text-soft);
+    font-size:0.85rem;
+    margin-top:50px;
+    padding-top:20px;
+    border-top:1px solid var(--border);
+  }
+
+  .resource-cols{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  @media (max-width:520px){.resource-cols{grid-template-columns:1fr;}}
+  .resource-cols h4{margin:0 0 6px;font-size:0.92rem;color:var(--text-soft);text-transform:uppercase;letter-spacing:0.03em;}
+  .resource-cols ul{list-style:none;padding:0;margin:0;}
+  .resource-cols li{margin:5px 0;}
+  .resource-cols a{color:var(--accent-2);text-decoration:none;font-size:0.92rem;}
+  .resource-cols a:hover{text-decoration:underline;}
+
+  a.qr-link{
+    display:inline-block;
+    background:var(--accent-2);
+    color:#2b1d05;
+    font-weight:700;
+    font-size:0.92rem;
+    padding:9px 16px;
+    border-radius:8px;
+    text-decoration:none;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]) a.qr-link{ color:#2b1d05; }
+  }
+  :root[data-theme="dark"] a.qr-link{ color:#2b1d05; }
+  a.qr-link:hover{opacity:0.88;}
+  a.plain-link{color:var(--accent-2);font-weight:600;text-decoration:none;}
+  a.plain-link:hover{text-decoration:underline;}
+</style>
+
+<div class="wrap">
+  <header class="hero">
+    <h1>🎓 Open House 2026–2027</h1>
+    <p class="sub">Orta Okul &amp; Lise Mentörlük Programı — Aile Bilgilendirme Rehberi</p>
+  </header>
+
+  <div class="privacy-note">
+    Bu sayfa, Open House sunumundaki genel bilgileri (akademik takvim, program akışı, beklentiler ve kaynaklar) içerir. Gizlilik nedeniyle, birim sorumlularının kişisel telefon numaraları ve öğrenci isimleri bu sayfada <strong>yer almamaktadır</strong> — bu bilgiler için lütfen mentorünüz veya birim sorumlunuzla doğrudan iletişime geçin.
+    <br><br>
+    This page mirrors the general program information from the Open House presentation (academic calendar, schedules, expectations, and resources). For privacy, personal phone numbers of coordinators and individual student names have been intentionally left off — please contact your mentor or unit coordinator directly for that information.
+  </div>
+
+  <nav class="tabs">
+    <button id="btn-ms" class="active" onclick="showTrack('ms')">🧒 Orta Okul (Middle School)</button>
+    <button id="btn-hs" onclick="showTrack('hs')">🎒 Lise (High School)</button>
+  </nav>
+
+  <!-- ============ MIDDLE SCHOOL ============ -->
+  <section id="track-ms" class="track active">
+
+    <h2 class="section-title">Birim Bilgileri</h2>
+    <details class="card">
+      <summary>Birim Sorumluları <span class="chev">▸</span></summary>
+      <div class="body">
+        <div class="contact-grid">
+          <div class="contact-row"><span>Nuran Abla</span><span class="role">Ortaokul Birim Sorumlusu</span></div>
+          <div class="contact-row"><span>Nesibe Abla</span><span class="role">6. Sınıf Birim Sorumlusu</span></div>
+          <div class="contact-row"><span>Leyla Abla</span><span class="role">7. Sınıf Birim Sorumlusu</span></div>
+          <div class="contact-row"><span>Munise Abla</span><span class="role">8. Sınıf Birim Sorumlusu</span></div>
+        </div>
+        <p class="lede">İletişim bilgileri (telefon numaraları) gizlilik nedeniyle bu sayfada paylaşılmamıştır — lütfen mentörünüzden veya WhatsApp komünitesinden ulaşın.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary>Kız Rehberlik WhatsApp Komünitesi &amp; Kış Kampı Kaydı <span class="chev">▸</span></summary>
+      <div class="body">
+        <p><strong>WhatsApp Komünitesi:</strong> Lütfen aşağıdaki bağlantı ile komüniteye giriniz (öğrenciniz hangi sınıfa geçtiyse o gruba giriniz).</p>
+        <p><a class="qr-link" href="https://www.canvaqr.com/RGQT9ZiLrB" target="_blank" rel="noopener">📱 WhatsApp Komünitesine Katıl</a></p>
+        <p><strong>Kış Kampı Kaydı:</strong> Taksitli kış kampı kayıtları başlatılmıştır!</p>
+        <p><a class="qr-link" href="https://www.raindropdallas.org/2026-middle-school-high-school-winter-camp/" target="_blank" rel="noopener">⛺ Kış Kampı Kaydına Git</a></p>
+      </div>
+    </details>
+
+    <h2 class="section-title">Veli &amp; Öğrenci</h2>
+
+    <details class="card">
+      <summary>Veli İzin Formu <span class="chev">▸</span></summary>
+      <div class="body">
+        <p>Öğrenciler, 2026–2027 eğitim yılında abla evine gelmeye başlamadan önce Permission Slip (Veli İzin Formu) belgesini velilerine imzalatmalıdır. İmzalanan form, öğrencinin kendi ablasına teslim edilmelidir. Veli izin formu teslim edilmeden öğrenci programa katılamaz.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary>Veliden Beklentilerimiz <span class="chev">▸</span></summary>
+      <div class="body">
+        <ul>
+          <li>Öğrencinin genel programlara katılımını sağlamak (haftasonu ablalar, kamplar, etkinlikler, vb.)</li>
+          <li>Programlara zamanında getirip götürmek — mentor ile iletişim</li>
+          <li>Evde çetele/maneviyat takip ve öğrenciyi teşvik</li>
+          <li>Yemek/ride sırasını takip etmek, sorumlulukları zamanında yerine getirmek</li>
+          <li>Veli ziyaretlerini en kısa zamanda halletmek</li>
+          <li>Programın genel kurallarına destek olmak</li>
+          <li>Veli gruplarında aktif olmak (bilgilendirmeleri takip etmek, iletişimde kalmak)</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary>Öğrenciden Beklentilerimiz <span class="chev">▸</span></summary>
+      <div class="body">
+        <ul>
+          <li>Aktif katılım</li>
+          <li>Saygılı iletişim (mentor ve arkadaşlar arası)</li>
+          <li>Arkadaşlık bilinci</li>
+          <li>Temizlik ve düzen</li>
+          <li>Emanet bilinci (evlerde yatılı)</li>
+          <li>Öğrenmeye ve manevi gelişime açıklık</li>
+          <li>Dijital cihazların evde bırakılışı</li>
+          <li>Programlara uygun giysilerle gelmek</li>
+          <li>Programda gerekli eşyaların getirilmesi</li>
+          <li>Çetele ve hedeflere uymak</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary>Ablalar Programında Telefon Kuralı <span class="chev">▸</span></summary>
+      <div class="body">
+        <p>Ortaokul Abla Programı'na öğrencilerin telefon getirmesi yasaktır. Bu kural, öğrencilerin programa odaklanmasını ve birlikte geçirilen zamanın daha verimli olmasını amaçlamaktadır. Gerekli durumlarda veli ile iletişim mentor veya abla üzerinden sağlanacaktır. Veli izin formunu imzaladığında bu kuralı da onaylıyor olmuş olunacaktır.</p>
+      </div>
+    </details>
+
+    <h2 class="section-title">Akademik Takvim</h2>
+    <details class="card" open>
+      <summary>2026–2027 Akademik Takvim (Orta Okul) <span class="chev">▸</span></summary>
+      <div class="body">
+        <p class="lede">Detaylı bilgiler Parent Booklet'ta mevcuttur.</p>
+        <div class="term-label">1. Dönem</div>
+        <table class="cal">
+          <tr><td class="date">13–16 Ağu</td><td>Mentor Training</td></tr>
+          <tr><td class="date">22 Ağu</td><td>Open House'lar (Orta–Lise)</td></tr>
+          <tr><td class="date">24 Ağu</td><td>Mevlid Kandili</td></tr>
+          <tr><td class="date">27 Ağu</td><td>Yetiştirmeler Başlıyor</td></tr>
+          <tr><td class="date">28–29 Ağu</td><td>Ablalar First Week</td></tr>
+          <tr><td class="date">4–5 Eyl</td><td>Cep Kamp (Orta–Lise Mentorler)</td></tr>
+          <tr><td class="date">7 Eyl</td><td>Labor Day Holiday</td></tr>
+          <tr><td class="date">26 Eyl</td><td>First Bloom Day</td></tr>
+          <tr><td class="date">4 Eki</td><td>Cep Kamp</td></tr>
+          <tr><td class="date">8–12 Eki</td><td>Üniversite Gezi (Columbus Day) — Utah veya San Francisco</td></tr>
+          <tr><td class="date">17 Eki</td><td>Toplu Uhuvvet Night</td></tr>
+          <tr><td class="date">24 Eki</td><td>Hizmet Fair</td></tr>
+          <tr><td class="date">27 Eki</td><td>Mentor Appreciation</td></tr>
+          <tr><td class="date">31 Eki–1 Kas</td><td>Dallas Festival (2 gün)</td></tr>
+          <tr><td class="date">6–8 Kas</td><td>ED ve Koordinatör Summit — Houston</td></tr>
+          <tr><td class="date">13 Kas</td><td>8th Grade Bloom Day (Cuma akşamı yatılı)</td></tr>
+          <tr><td class="date">14 Kas</td><td>6–7th Grade Bloom Day</td></tr>
+          <tr><td class="date">14 Kas</td><td>Career Fair — 8th / High School</td></tr>
+          <tr><td class="date">21–22 Kas</td><td>Thanksgiving Camp</td></tr>
+          <tr><td class="date">8 Ara</td><td>Üç Aylar / Recep</td></tr>
+          <tr><td class="date">10 Ara</td><td>Regaip Kandili</td></tr>
+          <tr><td class="date">15–21 Ara</td><td>Üniversite Kış Kampı</td></tr>
+          <tr><td class="date">23–29 Ara</td><td>Orta–Lise Kış Kampı</td></tr>
+          <tr><td class="date">4 Oca</td><td>Miraç Kandili</td></tr>
+          <tr><td class="date">9 Oca</td><td>Şaban</td></tr>
+        </table>
+        <div class="term-label">2. Dönem</div>
+        <table class="cal">
+          <tr><td class="date">21 Oca</td><td>Yetiştirmeler Başlıyor</td></tr>
+          <tr><td class="date">22–23 Oca</td><td>Ablalar Başlıyor</td></tr>
+          <tr><td class="date">22 Oca</td><td>Berat Kandili</td></tr>
+          <tr><td class="date">1 Şub</td><td>Hijab Day</td></tr>
+          <tr><td class="date">8 Şub</td><td>Ramazan</td></tr>
+          <tr><td class="date">13 Şub</td><td>Bloom Day</td></tr>
+          <tr><td class="date">15 Şub</td><td>President's Day</td></tr>
+          <tr><td class="date">5 Mar</td><td>Kadir Gecesi</td></tr>
+          <tr><td class="date">9 Mar</td><td>Ramazan Bayramı</td></tr>
+          <tr><td class="date">13–15 Mar</td><td>Spring Break Camp (Orta–Lise) / Academic Trip</td></tr>
+          <tr><td class="date">26–28 Mar</td><td>ED ve Koordinatör Summit 2 — Dallas</td></tr>
+          <tr><td class="date">26 Mar</td><td>Good Friday Holiday / Toplu Uhuvvet Günü (sabahtan)</td></tr>
+          <tr><td class="date">27 Mar</td><td>Kur'an Festivali (Orta–Lise)</td></tr>
+          <tr><td class="date">3 Nis</td><td>Üniversite Convention</td></tr>
+          <tr><td class="date">10 Nis</td><td>Bloom Day</td></tr>
+          <tr><td class="date">24 Nis</td><td>Colors of the World (Children Fest)</td></tr>
+          <tr><td class="date">16 May</td><td>Kurban Bayramı</td></tr>
+          <tr><td class="date">21–27 May</td><td>Yaz Kampı — Üniversite</td></tr>
+          <tr><td class="date">22 May</td><td>Homeschool Graduation</td></tr>
+          <tr><td class="date">27 May</td><td>Last Day of School (Orta–Lise)</td></tr>
+          <tr><td class="date">29 May–4 Haz</td><td>Yaz Kampı (Orta–Lise)</td></tr>
+          <tr><td class="date">6 Haz</td><td>Mentor Gezisi / Siyer Fair (Orta–Lise)</td></tr>
+        </table>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary>Haftalık Program Akışı &amp; Evde Çetele Takip <span class="chev">▸</span></summary>
+      <div class="body">
+        <div class="sched-wrap">
+        <table class="sched">
+          <tr><th>Cuma (Başlangıç 18:00)</th><th>Cumartesi (Bitiş 14:15)</th></tr>
+          <tr><td>Yemek + Muhabbet</td><td>Teheccüt</td></tr>
+          <tr><td>Kitap Okuma</td><td>Sabah Namazı + Tesbihat</td></tr>
+          <tr><td>Akşam Namazı + Tesbihat</td><td>Kahvaltı</td></tr>
+          <tr><td>Sohbet</td><td>Duha</td></tr>
+          <tr><td>Yatsı Namazı + Tesbihat</td><td>Evrad-u Ezkar + İstişare + Çay Saati</td></tr>
+          <tr><td></td><td>Temizlik</td></tr>
+          <tr><td></td><td>Aktivite</td></tr>
+        </table>
+        </div>
+        <p><strong>Evde Çetele Takip:</strong> Kur'an-ı Kerim, Kitap, Zikir, Namaz</p>
+      </div>
+    </details>
+
+    <h2 class="section-title">Programlar</h2>
+
+    <details class="card">
+      <summary>PMA Nedir? (Parent Mentor Association) <span class="chev">▸</span></summary>
+      <div class="body">
+        <p>PMA: Veli–Mentor İletişim Sorumlusu. Her öğrenci grubunda bir PMA velisi bulunur.</p>
+        <p><strong>PMA velisi:</strong></p>
+        <ul>
+          <li>Öğrenci grubundaki veliler ile mentor arasındaki iletişimi destekler</li>
+          <li>Duyuru ve hatırlatmaların düzenli paylaşılmasına yardımcı olur</li>
+          <li>Yemek ve ikram sırasının takibini yapar</li>
+          <li>Velilerin soru ve değişiklik taleplerini mentora iletmelerine yardımcı olur</li>
+          <li>Grup içindeki iletişimin düzenli, açık ve uyumlu ilerlemesine katkı sağlar</li>
+        </ul>
+        <p><strong>PMA Velisinin Sorumlulukları:</strong></p>
+        <ul>
+          <li>Öğrenci grubundaki veliler ile mentor arasındaki iletişime yardımcı olmak</li>
+          <li>Mentor tarafından oluşturulan yemek ve ikram listesini takip etmek</li>
+          <li>Haftanın başında ve ortasında, yemek sırası gelen veliye hatırlatma yapmak</li>
+          <li>Yemek veya ikram değişikliği yapmak isteyen veliyi yönlendirmek ve mentorla paylaşmak</li>
+          <li>Yemek veya ikram sırası unutulduğunda, belirlenen ödemenin mentora gönderilmesini takip etmek</li>
+          <li>Yapılan ödemelerin takibini düzenli şekilde yürütmek</li>
+          <li>Duyuru ve önemli bilgilerin veli grubunda paylaşılmasına destek olmak</li>
+          <li>Grup içindeki iletişimin düzenli, saygılı ve uyumlu ilerlemesine katkı sağlamak</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary>Türkçe Dil Gelişimi <span class="chev">▸</span></summary>
+      <div class="body">
+        <p>Türkçe videolar, sohbetler ve kitaplar programımızın önemli bir parçası olacaktır ve süreç boyunca düzenli olarak kullanılacaktır. Amacımız, öğrencilerimizin:</p>
+        <ul>
+          <li>Türkçeyi unutmamalarını ve günlük yaşamlarında daha akıcı kullanabilmelerini,</li>
+          <li>Hocaefendi'nin kaynaklarından daha iyi yararlanmalarını,</li>
+          <li>Lise programlarına daha hazırlıklı ve özgüvenli bir şekilde ilerlemelerini sağlamaktır.</li>
+        </ul>
+        <p>Velilerimizden evde Türkçe konuşmalarını sürdürmelerini ve çocuklarıyla birlikte Türkçe kitap okumaya zaman ayırmalarını özellikle bekliyoruz.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary>Parent Academy / Mentor Portal <span class="chev">▸</span></summary>
+      <div class="body">
+        <p>6th, 7th ve 8th Grade müfredatlarına Mentor Portal üzerinden ulaşılabilir.</p>
+        <p>
+          <a class="qr-link" href="https://lms.mentorportal.org/" target="_blank" rel="noopener">🌐 Mentor Portal'a Git</a>
+          &nbsp;
+          <a class="qr-link" href="https://mentorportal.org/middle-school-programs/parent-academy/" target="_blank" rel="noopener">🏠 Parent Academy Sayfası</a>
+        </p>
+        <p><strong>Parent Academy Nedir?</strong> Parent Academy conducts activities to raise awareness among families. Öne çıkan noktalar:</p>
+        <ul>
+          <li>Effective and accurate communication lessons for parents</li>
+          <li>Expert staff &amp; strong curriculum</li>
+          <li>Combination of science and religion</li>
+          <li>Opportunity to watch lessons from recording</li>
+          <li>Certificate available</li>
+        </ul>
+        <p><strong>Mentor Trainings:</strong> Tüm mentörlerimiz ve öğretmenlerimiz, her rehberlik yılının başında dört ana alanda eğitim tamamlıyor:</p>
+        <ul>
+          <li>Suicide Prevention</li>
+          <li>Child Abuse</li>
+          <li>Code of Conduct</li>
+          <li>Critical Policies</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary>Kur'an Zümresi <span class="chev">▸</span></summary>
+      <div class="body">
+        <ul>
+          <li>Haftasonu rehberlik saatleri içerisinde Kur'an dersleri</li>
+          <li>Hafta içi online Kur'an dersi desteği</li>
+          <li>Online Kur'an kampları</li>
+          <li>Ramazan'a özel programlar</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary>Kaynaklar <span class="chev">▸</span></summary>
+      <div class="body">
+        <div class="resource-cols">
+          <div>
+            <h4>YouTube Kaynakları</h4>
+            <ul>
+              <li><a href="http://www.youtube.com/@NurifyTV" target="_blank" rel="noopener">Nurify TV</a></li>
+              <li><a href="https://www.youtube.com/@Meridian_TV" target="_blank" rel="noopener">Meridian</a></li>
+              <li><a href="http://www.youtube.com/@israacademy" target="_blank" rel="noopener">ISRA Academy</a></li>
+              <li><a href="http://www.youtube.com/@KuranTime" target="_blank" rel="noopener">Kuran Time</a></li>
+              <li><a href="http://www.youtube.com/@raindropstv" target="_blank" rel="noopener">Raindrops TV</a></li>
+              <li><a href="http://www.youtube.com/@kusbakisi2023" target="_blank" rel="noopener">Kuş Bakışı</a></li>
+              <li><a href="http://www.youtube.com/@youthislandny" target="_blank" rel="noopener">Youth Island NY</a></li>
+              <li><a href="http://www.youtube.com/c/Cémavaire" target="_blank" rel="noopener">Cémavaire</a></li>
+              <li><a href="http://www.youtube.com/@Mizanvideolari" target="_blank" rel="noopener">Mizan</a></li>
+              <li><a href="http://www.youtube.com/@ÇınarMedya" target="_blank" rel="noopener">Çınar Medya</a></li>
+              <li><a href="https://youtube.com/playlist?list=PLx8MovyI0A0MRvybuf_ayWVsl85Da61dU&feature=shared" target="_blank" rel="noopener">Göz Hizası — Emine Eroğlu &amp; Asuman Abla</a></li>
+              <li><a href="http://www.youtube.com/@SkyAcademynj" target="_blank" rel="noopener">SkyAcademy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Web Siteleri</h4>
+            <ul>
+              <li><a href="https://lms.mentorportal.org/" target="_blank" rel="noopener">Mentor Portal</a></li>
+              <li><a href="https://hizmetten.com/" target="_blank" rel="noopener">Hizmetten</a></li>
+              <li><a href="https://hikmet.net/" target="_blank" rel="noopener">Hikmet.Net</a></li>
+              <li><a href="https://herkul.app/" target="_blank" rel="noopener">Herkul</a></li>
+              <li><a href="https://hizmetarsiv.com/" target="_blank" rel="noopener">Hizmet Arşiv</a></li>
+              <li><a href="https://onlinekeyfiyet.wordpress.com/" target="_blank" rel="noopener">Online Keyfiyet</a></li>
+              <li><a href="https://hizmetsource.com/" target="_blank" rel="noopener">hizmetsource</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <h2 class="section-title">Mentörler ve Grupları</h2>
+    <details class="card">
+      <summary>6. Sınıf Ablaları <span class="chev">▸</span></summary>
+      <div class="body">
+        <div class="roster-grid">
+          <div class="roster-chip"><div class="name">Meryem Abla</div><div class="room">3. Oda</div></div>
+          <div class="roster-chip"><div class="name">Bahar Abla</div></div>
+          <div class="roster-chip"><div class="name">Betül Abla</div><div class="room">1. Oda</div></div>
+          <div class="roster-chip"><div class="name">Hatice Abla</div><div class="room">1. Oda</div></div>
+          <div class="roster-chip"><div class="name">İpek Abla</div><div class="room">2. Oda</div></div>
+          <div class="roster-chip"><div class="name">Betül E. Abla</div><div class="room">3. Oda</div></div>
+        </div>
+        <p class="lede">Öğrenci grup listeleri gizlilik nedeniyle bu sayfada yer almamaktadır — kendi grubunuz için mentörünüze danışabilirsiniz.</p>
+      </div>
+    </details>
+    <details class="card">
+      <summary>7. Sınıf Ablaları <span class="chev">▸</span></summary>
+      <div class="body">
+        <div class="roster-grid">
+          <div class="roster-chip"><div class="name">Elif Abla</div><div class="room">7. Oda</div></div>
+          <div class="roster-chip"><div class="name">Nazlı Abla</div><div class="room">8. Oda</div></div>
+          <div class="roster-chip"><div class="name">Bilge Abla</div><div class="room">7. Oda</div></div>
+          <div class="roster-chip"><div class="name">Nihal Abla</div><div class="room">8. Oda</div></div>
+          <div class="roster-chip"><div class="name">Hatice Abla</div><div class="room">6. Oda</div></div>
+          <div class="roster-chip"><div class="name">Mevanur Abla</div><div class="room">5. Oda</div></div>
+          <div class="roster-chip"><div class="name">Nurbanu Abla</div><div class="room">6. Oda</div></div>
+          <div class="roster-chip"><div class="name">İnci Abla</div><div class="room">5. Oda</div></div>
+        </div>
+        <p class="lede">Öğrenci grup listeleri gizlilik nedeniyle bu sayfada yer almamaktadır.</p>
+      </div>
+    </details>
+    <details class="card">
+      <summary>8. Sınıf Ablaları <span class="chev">▸</span></summary>
+      <div class="body">
+        <div class="roster-grid">
+          <div class="roster-chip"><div class="name">Melisa Abla</div><div class="room">4. Oda</div></div>
+          <div class="roster-chip"><div class="name">Reyyan Abla</div><div class="room">4. Oda</div></div>
+        </div>
+        <p class="lede">Öğrenci grup listeleri gizlilik nedeniyle bu sayfada yer almamaktadır.</p>
+      </div>
+    </details>
+
+  </section>
+
+  <!-- ============ HIGH SCHOOL ============ -->
+  <section id="track-hs" class="track">
+
+    <h2 class="section-title">Birim Bilgileri</h2>
+    <details class="card">
+      <summary>Birim Sorumluları <span class="chev">▸</span></summary>
+      <div class="body">
+        <div class="contact-grid">
+          <div class="contact-row"><span>Nagehan Abla</span><span class="role">Lise Birim Sorumlusu</span></div>
+          <div class="contact-row"><span>Ahsen Abla</span><span class="role">9. Sınıf Birim Sorumlusu</span></div>
+          <div class="contact-row"><span>Meliha Abla</span><span class="role">10. Sınıf Birim Sorumlusu</span></div>
+          <div class="contact-row"><span>Aiperi Abla</span><span class="role">11. Sınıf Birim Sorumlusu</span></div>
+          <div class="contact-row"><span>Rana Abla</span><span class="role">12. Sınıf Birim Sorumlusu</span></div>
+        </div>
+        <p class="lede">İletişim bilgileri (telefon numaraları) gizlilik nedeniyle bu sayfada paylaşılmamıştır — lütfen mentörünüzden veya WhatsApp komünitesinden ulaşın.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary>Kız Rehberlik WhatsApp Komünitesi &amp; Kış Kampı Kaydı <span class="chev">▸</span></summary>
+      <div class="body">
+        <p><strong>WhatsApp Komünitesi:</strong> Lütfen aşağıdaki bağlantı ile komüniteye giriniz (öğrenciniz hangi sınıfa geçtiyse o gruba giriniz).</p>
+        <p><a class="qr-link" href="https://www.canvaqr.com/RGQT9ZiLrB" target="_blank" rel="noopener">📱 WhatsApp Komünitesine Katıl</a></p>
+        <p><strong>Kış Kampı Kaydı:</strong> Taksitli kış kampı kayıtları başlatılmıştır!</p>
+        <p><a class="qr-link" href="https://www.raindropdallas.org/2026-middle-school-high-school-winter-camp/" target="_blank" rel="noopener">⛺ Kış Kampı Kaydına Git</a></p>
+      </div>
+    </details>
+
+    <h2 class="section-title">Veli &amp; Öğrenci</h2>
+
+    <details class="card">
+      <summary>Veli İzin Formu <span class="chev">▸</span></summary>
+      <div class="body">
+        <p>2026–2027 eğitim yılı kapsamında abla evi programına katılacak her öğrencinin Veli İzin Formu (Permission Slip) sizlere dijital olarak gönderilecektir. Lütfen formu eksiksiz bir şekilde doldurup imzaladıktan sonra öğrencimizin mentor ablasına teslim ediniz. Formun teslim edilmesi, öğrencimizin programa katılımı için gereklidir.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary>Veliden Beklentilerimiz <span class="chev">▸</span></summary>
+      <div class="body">
+        <ul>
+          <li>Öğrencinin genel programlara katılımını sağlamak (haftasonu ablalar, kamplar, etkinlikler, vb.)</li>
+          <li>Programlara zamanında getirip götürmek — mentor ile iletişim</li>
+          <li>Evde çetele/maneviyat takip ve öğrenciyi teşvik</li>
+          <li>Yemek/ride sırasını takip etmek, sorumlulukları zamanında yerine getirmek</li>
+          <li>Veli ziyaretlerini en kısa zamanda halletmek</li>
+          <li>Programın genel kurallarına destek olmak</li>
+          <li>Veli gruplarında aktif olmak (bilgilendirmeleri takip etmek, iletişimde kalmak)</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary>Öğrenciden Beklentilerimiz <span class="chev">▸</span></summary>
+      <div class="body">
+        <ul>
+          <li>Aktif katılım</li>
+          <li>Saygılı iletişim (mentor ve arkadaşlar arası)</li>
+          <li>Arkadaşlık bilinci</li>
+          <li>Temizlik ve düzen</li>
+          <li>Emanet bilinci (evlerde yatılı)</li>
+          <li>Öğrenmeye ve manevi gelişime açıklık</li>
+          <li>Dijital cihazların evde bırakılışı</li>
+          <li>Programlara uygun giysilerle gelmek</li>
+          <li>Programda gerekli eşyaların getirilmesi</li>
+          <li>Çetele ve hedeflere uymak</li>
+        </ul>
+      </div>
+    </details>
+
+    <h2 class="section-title">Akademik Takvim</h2>
+    <details class="card" open>
+      <summary>2026–2027 Akademik Takvim (Lise) <span class="chev">▸</span></summary>
+      <div class="body">
+        <p class="lede">Detaylı bilgiler Parent Booklet'ta mevcuttur.</p>
+        <div class="term-label">1. Dönem</div>
+        <table class="cal">
+          <tr><td class="date">29 Tem–1 Ağu</td><td>Ev Ablaları Kampı</td></tr>
+          <tr><td class="date">31 Tem–3 Ağu</td><td>Birim + KEK Ablaları Kampı</td></tr>
+          <tr><td class="date">14–16 Ağu</td><td>Mentor Training</td></tr>
+          <tr><td class="date">15 Ağu</td><td>Evlere Dönüş</td></tr>
+          <tr><td class="date">22 Ağu</td><td>Open House'lar (Orta–Lise)</td></tr>
+          <tr><td class="date">24 Ağu</td><td>Mevlid Kandili</td></tr>
+          <tr><td class="date">27 Ağu</td><td>Yetiştirmeler Başlıyor</td></tr>
+          <tr><td class="date">28–29 Ağu</td><td>Ablalar First Week — Grup Grup</td></tr>
+          <tr><td class="date">28–29 Ağu</td><td>Ablalar 1st Week — 9. Sınıf Havuz Aktivite (3 grup)</td></tr>
+          <tr><td class="date">1 Eyl</td><td>Üniversite Kızlar Open House / Yat Gezisi</td></tr>
+          <tr><td class="date">4–5 Eyl</td><td>Summer Recharge Programı — High School Girls</td></tr>
+          <tr><td class="date">4–5 Eyl</td><td>Ablalar 2nd Week — 9. Sınıf Havuz Aktivite (diğer 3 grup)</td></tr>
+          <tr><td class="date">4–5 Eyl</td><td>GuideUp Program Başlıyor</td></tr>
+          <tr><td class="date">6 Eyl</td><td>Diyalog Academy + Intrafaith Mentor Training</td></tr>
+          <tr><td class="date">7 Eyl</td><td>Labor Day Holiday</td></tr>
+          <tr><td class="date">12 Eyl</td><td>Tüm Lise — Stres Yönetimi Akademik Sohbet</td></tr>
+          <tr><td class="date">19 Eyl</td><td>Aktivite (Grup–Grup) / Newcomers Gezi</td></tr>
+          <tr><td class="date">3 Eki</td><td>Toplu Dini/Hizmet Sohbet #1 (Hizmet Ayı)</td></tr>
+          <tr><td class="date">4 Eki</td><td>Üniversite Cep Kamp</td></tr>
+          <tr><td class="date">8–12 Eki</td><td>Üniversite Gezi (Columbus Day) — Utah veya San Francisco</td></tr>
+          <tr><td class="date">17 Eki</td><td>Toplu Dini/Hizmet Sohbet #2 (Hizmet Ayı) / Toplu Uhuvvet Night</td></tr>
+          <tr><td class="date">24 Eki</td><td>Hizmet Fair</td></tr>
+          <tr><td class="date">27 Eki</td><td>Mentor Appreciation</td></tr>
+          <tr><td class="date">31 Eki</td><td>Toplu Akademik Sohbet #1</td></tr>
+          <tr><td class="date">31 Eki–1 Kas</td><td>Dallas Festival (2 gün)</td></tr>
+          <tr><td class="date">6–8 Kas</td><td>Southwest Bay Bayan Toplantı / Aktivite Haftası</td></tr>
+          <tr><td class="date">14 Kas</td><td>Career Fair — 8th / High School (Akademik)</td></tr>
+          <tr><td class="date">20–21 Kas</td><td>Lise Cep Camp</td></tr>
+          <tr><td class="date">21–22 Kas</td><td>Üniversite Thanksgiving Kampı — 2 Günlük Seminar</td></tr>
+          <tr><td class="date">21–29 Kas</td><td>12th Grade Thanksgiving Senior Camp</td></tr>
+          <tr><td class="date">4–5 Ara</td><td>Hoşgeldin Üç Aylar / Aylık Sohbet</td></tr>
+          <tr><td class="date">8 Ara</td><td>Üç Aylar / Recep</td></tr>
+          <tr><td class="date">10 Ara</td><td>Regaip Kandili</td></tr>
+          <tr><td class="date">15–21 Ara</td><td>Üniversite Kış Kampı</td></tr>
+          <tr><td class="date">23–29 Ara</td><td>Orta–Lise Kış Kampı</td></tr>
+        </table>
+        <div class="term-label">2. Dönem</div>
+        <table class="cal">
+          <tr><td class="date">4 Oca</td><td>Miraç Kandili</td></tr>
+          <tr><td class="date">9 Oca</td><td>Şaban</td></tr>
+          <tr><td class="date">21 Oca</td><td>Yetiştirmeler Başlıyor</td></tr>
+          <tr><td class="date">22–23 Oca</td><td>Ablalar Başlıyor</td></tr>
+          <tr><td class="date">22 Oca</td><td>Berat Kandili</td></tr>
+          <tr><td class="date">23 Oca</td><td>Aktivite Haftası</td></tr>
+          <tr><td class="date">30 Oca</td><td>Convention — Lise (Akademik) / Aidventurers / Elevaid</td></tr>
+          <tr><td class="date">1 Şub</td><td>Hijab Day</td></tr>
+          <tr><td class="date">7 Şub</td><td>Cep Kamp</td></tr>
+          <tr><td class="date">8 Şub</td><td>Ramazan</td></tr>
+          <tr><td class="date">15 Şub</td><td>President's Day</td></tr>
+          <tr><td class="date">5 Mar</td><td>Kadir Gecesi &amp; Kutlama</td></tr>
+          <tr><td class="date">9 Mar</td><td>Ramazan Bayramı</td></tr>
+          <tr><td class="date">13–15 Mar</td><td>Spring Break Camp (Orta–Lise) / Academic Trip</td></tr>
+          <tr><td class="date">26–28 Mar</td><td>ED ve Koordinatör Summit 2 — Dallas</td></tr>
+          <tr><td class="date">26 Mar</td><td>Good Friday Holiday / Toplu Uhuvvet Günü (sabahtan)</td></tr>
+          <tr><td class="date">27 Mar</td><td>Kur'an Festivali (Orta–Lise)</td></tr>
+          <tr><td class="date">3 Nis</td><td>Üniversite Convention</td></tr>
+          <tr><td class="date">24 Nis</td><td>Colors of the World (Children Fest) / Toplu Akademik Sohbet #2</td></tr>
+          <tr><td class="date">Nisan (TBD)</td><td>Siyer Fair</td></tr>
+          <tr><td class="date">7 May</td><td>12. Sınıf Mezuniyet</td></tr>
+          <tr><td class="date">14 May</td><td>Üniversite Mezuniyet</td></tr>
+          <tr><td class="date">16 May</td><td>Kurban Bayramı</td></tr>
+          <tr><td class="date">21–27 May</td><td>Yaz Kampı — Üniversite</td></tr>
+          <tr><td class="date">22 May</td><td>Homeschool Graduation</td></tr>
+          <tr><td class="date">27 May</td><td>Last Day of School (Orta–Lise)</td></tr>
+          <tr><td class="date">29 May–4 Haz</td><td>Yaz Kampı (Orta–Lise)</td></tr>
+          <tr><td class="date">6 Haz</td><td>Mentor Gezisi</td></tr>
+        </table>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary>Program Akışı (Schedule) <span class="chev">▸</span></summary>
+      <div class="body">
+        <p><strong>Haftalık Program Akışı</strong></p>
+        <div class="sched-wrap">
+        <table class="sched">
+          <tr><th>Saat</th><th>Cuma</th></tr>
+          <tr><td>18:30–20:00</td><td>Akşam Yemeği</td></tr>
+          <tr><td>20:10–20:30</td><td>Akşam Namazı + Tesbihat</td></tr>
+          <tr><td>20:30–21:00</td><td>İlmihal Dersi (Zoom)</td></tr>
+          <tr><td>21:10–21:30</td><td>Kur'an / Cevşen (geç gelenler)</td></tr>
+          <tr><td>21:30–22:00</td><td>Yatsı Namazı + Tesbihat</td></tr>
+          <tr><td>22:00–22:30</td><td>Çay Saati / İstişare</td></tr>
+          <tr><td>22:30–22:45</td><td>Yatmaya Hazırlık</td></tr>
+          <tr><td>23:00</td><td>Yatış</td></tr>
+        </table>
+        <table class="sched">
+          <tr><th>Saat</th><th>Cumartesi</th></tr>
+          <tr><td>05:30–05:41</td><td>Teheccüd</td></tr>
+          <tr><td>08:45–09:30</td><td>Kahvaltı</td></tr>
+          <tr><td>09:30–10:10</td><td>Müzakereli Kitap</td></tr>
+          <tr><td>10:10–10:20</td><td>Duha</td></tr>
+          <tr><td>10:20–11:10</td><td>Mentor Sohbet</td></tr>
+          <tr><td>11:10–11:20</td><td>Mola</td></tr>
+          <tr><td>11:20–11:50</td><td>Bireysel Çetele (Kitap/Kur'an/Ezber/Cevşen)</td></tr>
+          <tr><td>11:50–12:10</td><td>Temizlik</td></tr>
+          <tr><td>12:10–12:30</td><td>Hazırlanma</td></tr>
+          <tr><td>12:30</td><td>Bitiş</td></tr>
+        </table>
+        </div>
+        <p><strong>Toplu Sohbet Haftası Program Akışı</strong></p>
+        <div class="sched-wrap">
+        <table class="sched">
+          <tr><th>Saat</th><th>Cuma</th></tr>
+          <tr><td>18:30–20:00</td><td>Akşam Yemeği</td></tr>
+          <tr><td>20:10–20:30</td><td>Akşam Namazı + Tesbihat</td></tr>
+          <tr><td>20:30–21:00</td><td>İlmihal Dersi (Zoom)</td></tr>
+          <tr><td>21:10–21:40</td><td>Kur'an / Cevşen (geç gelenler)</td></tr>
+          <tr><td>21:40–22:00</td><td>Yatsı Namazı + Tesbihat</td></tr>
+          <tr><td>22:00–22:30</td><td>Çay Saati / İstişare</td></tr>
+          <tr><td>22:30–22:45</td><td>Yatmaya Hazırlık</td></tr>
+          <tr><td>23:00</td><td>Yatış</td></tr>
+        </table>
+        <table class="sched">
+          <tr><th>Saat</th><th>Cumartesi</th></tr>
+          <tr><td>05:30–05:41</td><td>Teheccüd</td></tr>
+          <tr><td>08:45–09:30</td><td>Kahvaltı / Temizlik</td></tr>
+          <tr><td>09:30–10:00</td><td>Genel Merkeze Geliş</td></tr>
+          <tr><td>10:00–11:00</td><td>Toplu Sohbet</td></tr>
+          <tr><td>11:00–11:10</td><td>Mola</td></tr>
+          <tr><td>11:10–12:00</td><td>Müzakereli Okuma</td></tr>
+          <tr><td>12:00–12:10</td><td>Mola</td></tr>
+          <tr><td>12:10–12:40</td><td>Mentor Portal Sohbeti</td></tr>
+          <tr><td>12:45</td><td>Veli Pick-up</td></tr>
+        </table>
+        </div>
+      </div>
+    </details>
+
+    <h2 class="section-title">Programlar</h2>
+
+    <details class="card">
+      <summary>PMA — Parent Mentor Association / Veli Dayanışma Birliği <span class="chev">▸</span></summary>
+      <div class="body">
+        <ul>
+          <li>Velilerle daha kuvvetli iletişim oluşturma</li>
+          <li>Velilerin taleplerini daha yakından dinleme ve üzerinde istişare edebilme</li>
+          <li>Öğrencilere verilen rehberlikte veliyi daha aktif bir hale getirme</li>
+          <li>Mentore maddi manevi desteği arttırma</li>
+          <li>Toplantılar ayda bir olacaktır (ihtiyaç dahilinde daha sık toplantı gerçekleştirilebilir)</li>
+          <li>Toplantının daimi üyeleri gruplardan seçilen velilerdir</li>
+          <li>Toplantı ve işlerin takibini başkan ve yardımcısı yapacaktır</li>
+          <li>Gruplardaki diğer velileri de işin içine çekmek ve çocukların eğitiminde aktif olmalarını sağlamak için organizasyon ve aktiviteler yapılabilir</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary>Parent Academy / Mentor Portal <span class="chev">▸</span></summary>
+      <div class="body">
+        <p>
+          <a class="qr-link" href="https://lms.mentorportal.org/" target="_blank" rel="noopener">🌐 Mentor Portal'a Git</a>
+          &nbsp;
+          <a class="qr-link" href="https://mentorportal.org/middle-school-programs/parent-academy/" target="_blank" rel="noopener">🏠 Parent Academy Sayfası</a>
+        </p>
+        <p><strong>Mentor Trainings:</strong> Tüm mentörlerimiz ve öğretmenlerimiz, her rehberlik yılının başında dört ana alanda eğitim tamamlıyor: Suicide Prevention, Child Abuse, Code of Conduct, Critical Policies.</p>
+        <div class="flyer">
+          <h4>Parent Academy Seminar Takvimi</h4>
+          <div class="meta">Her Pazar, 9pm ET / 6pm PT</div>
+          <ul>
+            <li><strong>4 Eylül:</strong> İdeal Nesiller Yetiştirmede Aile Hayatının Önemi</li>
+            <li><strong>11 Eylül:</strong> Gençlere ve Çocuklara İmani Konular Nasıl Anlatılır, Üzerinde Durulacak Yaygın Sorular?</li>
+            <li><strong>18 Eylül:</strong> Okullarda Yaygın Görülen Bullying (Akran Zorbalığı) Nedir ve Aileler Okullarda Nasıl Aktif Olabilirler?</li>
+            <li><strong>25 Eylül:</strong> Mentörlere Doğru Bakış ve Onlarla İletişim Nasıl Olmalı?</li>
+          </ul>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary>GuideUp — Rehber Öğrenci Programı <span class="chev">▸</span></summary>
+      <div class="body">
+        <p><strong>GuideUp Programı Nedir?</strong> Hizmet gönüllüsü yeni neslin yetişmesi için özel bir eğitim süreci.</p>
+        <p><strong>Hedef:</strong> Gençlerin kalbini ve aklını birlikte beslemek; onları sorumluluk sahibi, merhametli, paylaşmayı bilen ve hizmet şuuruyla yaşayan bireyler olarak yetiştirmek.</p>
+        <p><strong>Öz kaynaklarımız:</strong> Risale-i Nur, Hocaefendi'nin eserleri, sohbet kasetleri.</p>
+        <p><strong>Beklentilerimiz:</strong> Disiplin, devamlılık, okuma; velilerin çocukların programa katılması için desteği.</p>
+        <p><strong>Ortak hedef:</strong> Kendi kendine okuyup anlayan ve anlatan bireyler yetiştirmek.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary>Kur'an Akademi Desteği <span class="chev">▸</span></summary>
+      <div class="body">
+        <p>Seviye tespiti ve seviyeye uygun gelişim için uzman heyetle yürüyen program.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary>Wise Akademi Dersleri (Raindrop Academy) <span class="chev">▸</span></summary>
+      <div class="body">
+        <div class="flyer">
+          <h4>Hadis · Tefsir · Kur'an Arapçası — Online</h4>
+          <ul>
+            <li>Kız / erkek ayrı sınıflar</li>
+            <li>Kitap ve müfredat takibi</li>
+            <li>Öğrenci takibi, veli bilgilendirme</li>
+          </ul>
+          <div class="kv">
+            <dt>Gün</dt><dd>Her Çarşamba</dd>
+            <dt>Saat</dt><dd>17:30 – 19:30</dd>
+            <dt>Yer</dt><dd>1100 Geomap Lane, Plano, TX 75075</dd>
+            <dt>Başlangıç</dt><dd>16 Eylül Çarşamba</dd>
+            <dt>Ücret</dt><dd>Aylık $100</dd>
+            <dt>Instagram</dt><dd>raindrop.academy.dallas</dd>
+            <dt>E-posta</dt><dd>info@raindropacademy.org</dd>
+            <dt>Website</dt><dd>www.raindropacademy.org</dd>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary>College Essay Programlarımız — Senior Academic Series <span class="chev">▸</span></summary>
+      <div class="body">
+        <p class="lede">Fall 2026 · Cumartesileri · 18:30 atıştırmalık &amp; hazırlık, 19:00 program başlangıcı · Led by Ali Erenkol, Raindrop Education</p>
+        <div class="flyer">
+          <ul>
+            <li><strong>22 Ağustos:</strong> College Applications Workshop — Common App hesabı oluşturma, dengeli bir üniversite listesi hazırlama, kişisel bir takip takvimi başlatma</li>
+            <li><strong>29 Ağustos:</strong> Essay Camp — Choosing Your Story — Common App sorularını inceleme, yazmaya değer deneyimi bulma ve taslak oluşturma</li>
+            <li><strong>12 Eylül:</strong> Essay Camp — First Draft Review — taslak getirme, içerik/organizasyon/anlatım üzerine yapılandırılmış geri bildirim alma</li>
+            <li><strong>19 Eylül:</strong> Essay Camp — Final Revisions — düzeltme, kelime sınırına indirme, her okulun ek makale gereksinimlerini planlama</li>
+            <li><strong>3 Ekim:</strong> Financial Aid &amp; FAFSA Seminar — FAFSA ve TASFA süreci baştan sona: belgeler, katkı sağlayanlar, burs, work-study ve krediler</li>
+          </ul>
+          <div class="kv"><dt>Yer</dt><dd>Youth Center, 1100 Geomap Ln, Plano, TX 75074</dd></div>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary>SAT Kurslarımız — SAT Prep &amp; College Readiness <span class="chev">▸</span></summary>
+      <div class="body">
+        <p class="lede">Resmi College Board pratik soruları, düzenli deneme sınavları ve birebir öğretmen desteği üzerine kurulu, iki dönemlik yapılandırılmış program. (Small classes · Weekly reports · English &amp; Math)</p>
+        <div class="kv">
+          <dt>1. Dönem</dt><dd>5 Eylül – 19 Aralık (15 hafta; son kayıt 4 Eylül)</dd>
+          <dt>2. Dönem</dt><dd>9 Ocak – 22 Mayıs (18 hafta)</dd>
+          <dt>Yüz yüze</dt><dd>Her Cumartesi, 14:00–17:00</dd>
+          <dt>Online</dt><dd>Haftada bir canlı ders (saat belirlenecek)</dd>
+          <dt>Ücret</dt><dd>1. Dönem $500 · 2. Dönem $600 · Tam Yıl (ikisi birden) $1000 — $100 tasarruf</dd>
+          <dt>Yaz dönemi</dt><dd>15 Haziran – 15 Temmuz</dd>
+          <dt>Kayıt / Adres</dt><dd>1100 Geomap Lane, Plano, TX — raindropacademy@raindropdallas.org</dd>
+        </div>
+        <p><strong>SAT Neden Önemlidir?</strong></p>
+        <ul>
+          <li>Üniversite başvurularında önemli bir akademik göstergedir</li>
+          <li>Erken başlamak büyük bir avantaj sağlar</li>
+          <li>PSAT/NMSQT, SAT için ilk adım ve hazırlık noktasıdır — burs fırsatlarının kapısını açabilir</li>
+          <li>Bazı üniversiteler SAT skorlarını hâlâ kabul ve burs kararlarında kullanıyor</li>
+          <li>Öğrencilerin eksiklerini erken fark etmelerini sağlar</li>
+          <li>AP Seminar ve AP Research dersleri critical thinking becerilerini geliştirmeye yardımcı olur</li>
+          <li>Kitap okumak SAT için gerçekten faydalıdır</li>
+        </ul>
+        <p><strong>Program Hedefleri:</strong> Skor artırma, motivasyon ve düzenli soru çözme alışkanlığı kazandırma, unutulan konuları hatırlatma, test teknikleri/trikler öğretme, soruları hatasız ve hızlı çözme becerisi kazandırma, Desmos Calculator kullanımını öğretme, haftanın 3 günü konu anlatımı + 4 gün soru çözme hedefi.</p>
+        <p><strong>Program içeriği:</strong> College Board soru bankasından pratik yapma, 8.–12. sınıflar için One-Prep müfredatının tamamlanması, ilerlemeyi görmek için deneme sınavları, derste öğretmenlerden birebir destek, hem İngilizce hem Matematikte güçlü bir temel oluşturma, ve velilere haftalık ilerleme raporları.</p>
+        <p class="lede">Kaynaklar: oneprep.co (soru bankası / çalışma planlayıcı), DeltaMath, "Digital SAT Math Manual and Workbook" (Dr. Ela Sharma, Road to an 800, 5. Baskı 2025–2026), settletetutoring.com/practice-tests.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary>Kaynaklar <span class="chev">▸</span></summary>
+      <div class="body">
+        <div class="resource-cols">
+          <div>
+            <h4>YouTube Kaynakları</h4>
+            <ul>
+              <li><a href="http://www.youtube.com/@NurifyTV" target="_blank" rel="noopener">Nurify TV</a></li>
+              <li><a href="https://www.youtube.com/@Meridian_TV" target="_blank" rel="noopener">Meridian</a></li>
+              <li><a href="http://www.youtube.com/@israacademy" target="_blank" rel="noopener">ISRA Academy</a></li>
+              <li><a href="http://www.youtube.com/@KuranTime" target="_blank" rel="noopener">Kuran Time</a></li>
+              <li><a href="http://www.youtube.com/@raindropstv" target="_blank" rel="noopener">Raindrops TV</a></li>
+              <li><a href="http://www.youtube.com/@kusbakisi2023" target="_blank" rel="noopener">Kuş Bakışı</a></li>
+              <li><a href="http://www.youtube.com/@youthislandny" target="_blank" rel="noopener">Youth Island NY</a></li>
+              <li><a href="http://www.youtube.com/c/Cémavaire" target="_blank" rel="noopener">Cémavaire</a></li>
+              <li><a href="http://www.youtube.com/@Mizanvideolari" target="_blank" rel="noopener">Mizan</a></li>
+              <li><a href="http://www.youtube.com/@ÇınarMedya" target="_blank" rel="noopener">Çınar Medya</a></li>
+              <li><a href="https://youtube.com/playlist?list=PLx8MovyI0A0MRvybuf_ayWVsl85Da61dU&feature=shared" target="_blank" rel="noopener">Göz Hizası — Emine Eroğlu &amp; Asuman Abla</a></li>
+              <li><a href="http://www.youtube.com/@SkyAcademynj" target="_blank" rel="noopener">SkyAcademy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Web Siteleri</h4>
+            <ul>
+              <li><a href="https://lms.mentorportal.org/" target="_blank" rel="noopener">Mentor Portal</a></li>
+              <li><a href="https://hizmetten.com/" target="_blank" rel="noopener">Hizmetten</a></li>
+              <li><a href="https://hikmet.net/" target="_blank" rel="noopener">Hikmet.Net</a></li>
+              <li><a href="https://herkul.app/" target="_blank" rel="noopener">Herkul</a></li>
+              <li><a href="https://hizmetarsiv.com/" target="_blank" rel="noopener">Hizmet Arşiv</a></li>
+              <li><a href="https://onlinekeyfiyet.wordpress.com/" target="_blank" rel="noopener">Online Keyfiyet</a></li>
+              <li><a href="https://hizmetsource.com/" target="_blank" rel="noopener">hizmetsource</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <h2 class="section-title">Mentörler ve Grupları</h2>
+    <details class="card">
+      <summary>9. Sınıf Ablaları <span class="chev">▸</span></summary>
+      <div class="body">
+        <div class="roster-grid">
+          <div class="roster-chip"><div class="name">Rukiyenur Abla</div></div>
+          <div class="roster-chip"><div class="name">Reyyan Abla</div></div>
+          <div class="roster-chip"><div class="name">Reyhan Abla</div></div>
+          <div class="roster-chip"><div class="name">Münise Abla</div></div>
+          <div class="roster-chip"><div class="name">Neşe Abla</div></div>
+          <div class="roster-chip"><div class="name">Nergis Abla</div></div>
+        </div>
+        <p class="lede">Öğrenci grup listeleri gizlilik nedeniyle bu sayfada yer almamaktadır — kendi grubunuz için mentörünüze danışabilirsiniz.</p>
+      </div>
+    </details>
+    <details class="card">
+      <summary>10. Sınıf Ablaları <span class="chev">▸</span></summary>
+      <div class="body">
+        <div class="roster-grid">
+          <div class="roster-chip"><div class="name">Elif Bera Abla</div></div>
+          <div class="roster-chip"><div class="name">Yeşim Abla</div></div>
+          <div class="roster-chip"><div class="name">Gülşen Abla</div></div>
+          <div class="roster-chip"><div class="name">Bahar Abla</div></div>
+          <div class="roster-chip"><div class="name">Safiye Abla</div></div>
+        </div>
+        <p class="lede">Öğrenci grup listeleri gizlilik nedeniyle bu sayfada yer almamaktadır.</p>
+      </div>
+    </details>
+    <details class="card">
+      <summary>11. Sınıf Ablaları <span class="chev">▸</span></summary>
+      <div class="body">
+        <div class="roster-grid">
+          <div class="roster-chip"><div class="name">Hilal Abla</div></div>
+          <div class="roster-chip"><div class="name">Seha Abla</div></div>
+          <div class="roster-chip"><div class="name">Erva Abla</div></div>
+          <div class="roster-chip"><div class="name">Nuray Abla</div></div>
+        </div>
+        <p class="lede">Öğrenci grup listeleri gizlilik nedeniyle bu sayfada yer almamaktadır.</p>
+      </div>
+    </details>
+    <details class="card">
+      <summary>12. Sınıf Ablaları <span class="chev">▸</span></summary>
+      <div class="body">
+        <div class="roster-grid">
+          <div class="roster-chip"><div class="name">Fatma Sena Abla</div></div>
+          <div class="roster-chip"><div class="name">Beyza Abla</div></div>
+        </div>
+        <p class="lede">Öğrenci grup listeleri gizlilik nedeniyle bu sayfada yer almamaktadır.</p>
+      </div>
+    </details>
+
+  </section>
+
+  <footer class="page-footer">
+    💙 Mentörlerimizle tanışmaya geçebiliriz! Raindrop kulüplerimizi ve kurumlarımızı yakından tanımak, gönüllülük fırsatları ve etkinlikler hakkında bilgi almak için masalarımıza uğramayı unutmayalım.
+    <br><br>
+    2026–2027 Open House sunumundan derlenmiştir.
+  </footer>
+</div>
+
+<script>
+function showTrack(track){
+  document.getElementById('track-ms').classList.toggle('active', track==='ms');
+  document.getElementById('track-hs').classList.toggle('active', track==='hs');
+  document.getElementById('btn-ms').classList.toggle('active', track==='ms');
+  document.getElementById('btn-hs').classList.toggle('active', track==='hs');
+}
+</script>
